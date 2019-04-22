@@ -28,6 +28,7 @@ h1 small{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 .key {
   width: 100px;
@@ -72,6 +73,22 @@ kbd {
   letter-spacing: 1px;
 }
 .footer a{
-  color: #673AB7;
+  color: #81f2ff;
   text-decoration: none;
+}
+
+
+/* Desktop & Laptop */
+@media (min-width: 1025px) {
+  
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .keyboard {
+    margin-top: 30vh;
+  }
+  
 }
