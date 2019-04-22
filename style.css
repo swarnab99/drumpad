@@ -18,6 +18,11 @@ h1{
   font-size: 6em;
   text-align: center;
 }
+h1 small{
+  font-size: .2em;
+  color: #000;
+  display: inline-block;
+}
 
 .keyboard {
   display: flex;
