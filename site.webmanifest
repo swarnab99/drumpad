@@ -1,0 +1,21 @@
+{
+    "name": "Drumify",
+    "short_name": "Drumify",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffc801",
+    "theme_color": "#ffc801",
+    "description": "Play Drum Online",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

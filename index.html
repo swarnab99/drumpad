@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JS Drum Kit</title>
+  <meta name="apple-mobile-web-app-title" content="Drumify">
+  <meta name="application-name" content="Drumify">
+  <meta name="msapplication-TileColor" content="#ffc801">
+  <meta name="theme-color" content="#ffc801">
+  <title>Drumify | Play Drum Online</title>
   <link rel="stylesheet" href="style.css">
+  <!-- PWA -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc801">
 </head>
 <body>
   <div>
@@ -91,6 +101,51 @@
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  window.addEventListener('load', () => {
+    registerSW();
+  });
+
+  async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('./sw.js');
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 
